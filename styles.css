@@ -1,0 +1,254 @@
+/* Title styling */
+.title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 34px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Baloo 2', sans-serif; /* Choose either Pacifico or Baloo */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+
+.subtitle {
+    position: absolute;
+    top: 65px; /* Position slightly below the title */
+    left: 20px;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+}
+
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #997777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #bb92b7;
+    background-size: cover;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  /* Full height of the viewport */
+    padding: 20px;
+}
+
+.welcome-container {
+    background: rgba(255, 255, 255, 0.95); /* Light background for contrast */
+    border-radius: 15px;  /* Rounded corners */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);  /* Subtle shadow for depth */
+    padding: 40px;  /* Increased padding for more space */
+    max-width: 600px;  /* Maximum width */
+    width: 100%;  /* Full width */
+    margin-bottom: 20px;  /* Space below the question box */
+    font-size: 1.2rem;  /* Larger text */
+    text-align: center;  /* Center the text */
+}
+
+.question-container {
+    background: rgba(255, 255, 255, 0.95); /* Light background for contrast */
+    border-radius: 15px;  /* Rounded corners */
+    box-shadow: 0px 4px 12px rgba(32, 11, 11, 0.15);  /* Subtle shadow for depth */
+    padding: 40px;  /* Increased padding for more space */
+    max-width: 600px;  /* Maximum width */
+    width: 100%;  /* Full width */
+    margin-bottom: 20px;  /* Space below the question box */
+    font-size: 1.2rem;  /* Larger text */
+    text-align: center;  /* Center the text */
+}
+
+
+#question {
+    margin-bottom: 30px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  /* Increased space between buttons */
+}
+
+.btn {
+    padding: 10px 20px;  /* Padding for buttons */
+    background-color: #997676;  /* Button color */
+    color: white;  /* Text color */
+    border: none;  /* No border */
+    border-radius: 5px;  /* Rounded corners for buttons */
+    cursor: pointer;  /* Pointer cursor on hover */
+    transition: background-color 0.3s;  /* Smooth background change on hover */
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #7c6161;  /* Darker button color on hover */
+}
+
+.btn:disabled {
+    background-color: #b0bec5;
+    cursor: not-allowed;
+}
+
+#next-button {
+    margin-top: 10px;
+}
+
+.score-container {
+    margin-top: 20px;
+}
+
+#score-container h2 {
+    font-size: 22px;
+}
+
+#score {
+    color: #997777;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#start-button {
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #997676; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background change on hover */
+    margin-top: 20px; /* Add margin-top to create space above */
+}
+
+#start-button:hover {
+    background-color: #474747; /* Darker button color on hover */
+}
+
+.image-container {
+    position: absolute; 
+    bottom: 20px;
+    left: 20px;
+    display: flex; 
+    gap: 10px; 
+    mix-blend-mode: multiply;
+}
+
+.quiz-image {
+    max-width: 150px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.gif-container {
+    position: absolute;
+    top: 20px;  /* Distance from the bottom */
+    right: 20px;   /* Distance from the right */
+}
+
+.quiz-gif {
+    max-width: 150px; /* Adjust size if needed */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.learn-more-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#resources-container {
+    background: rgba(255, 255, 255, 0.95); 
+    border-radius: 15px; 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); 
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.resource-links {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.resource-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4f2ad4; /* Match the site color scheme */
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    max-width:100px;
+}
+
+.resource-btn:hover {
+    background-color: #3b1ba6; /* Darker shade on hover */
+}
+
+#poll-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.poll-options label {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.poll-question {
+    margin-bottom: 20px; /* Increase the space between the question and answer options */
+}
+
+.poll-options {
+    margin-top: 10px; /* Optional: Add some space above the options if needed */
+}
+
+#case-study-container p {
+    font-size: 14px; /* Adjust the size as needed */
+}
+
+#policy-container-1 label {
+    font-size:14px;
+}
+
+#policy-container-2 label {
+    font-size:14px;
+}
+
