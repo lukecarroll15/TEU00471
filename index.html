@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title">Psychology of the Climate Crisis</h1> 
+    <h2 class="subtitle">TEU00471</h2>
+    <div class="container">
+        <div id="welcome-container" class="welcome-container">
+            <h2 style="margin-bottom:16px;">TCD Climate Change Quiz</h2>
+            <p style="font-size:18px;">Welcome to Nuclear Policy and the Climate Crisis interactive game. Here you will have the chance to discover the interdependence of nuclear weapons, nuclear energy and the climate crisis - its common policy issues and dangers. Your goal is to find the perfect policy combination that enables you to regulate nuclear weapons and nuclear energy in order to minimise their adverse impacts on the development of the climate crisis. After the completion of the game, you will be able to consult our research on the explanations for policy inaction and tools for combating it in this area of concern as well. Disclaimer: While this game is based on research done on the topic of the interdependence of nuclear weapons and the climate crisis, it is important to note that the outcomes of this game are speculations of the authors. Furthermore, this game is merely a simplification of a very complex topic, therefore, we offer further educational resources if you would like to learn more about the intersection of nuclear topics and the climate crisis in different stages of the game.
+                </p>
+            <button id="start-button" class="btn">I'm ready to begin</button>
+            <button id="learn-more-button" class="btn">I want to learn the rules</button>
+        </div>
+
+        <div class="image-container">
+            <img src="images/nuclear.png" alt="Nuclear Reactor" class="quiz-image">
+        </div>
+
+        <div class="gif-container">
+            <img src="images/tree.gif" class="quiz-gif">
+        </div>
+
+        <div class="learn-more-container" id="learn-more-container" style="display: none;">
+            <h2 style="margin-bottom:15px">Rules</h2>
+            <p style="margin-bottom:15px">You will be presented with six different policies which regulate the proliferation of nuclear weapons and nuclear energy in a fictional country of the near future in which mitigation of the climate crisis represents a pressing topic of debate. You will have to choose between three policies focused on nuclear weapons and three policies focused on nuclear energy, while each combination of choices determines a distinct outcome. Your choices will determine the success of your policies in mitigating the climate crisis, so choose wisely! After you make your decisions and learn about their potential implications on the environment, you will be presented with a set of explanations and tools for overcoming inaction on the joint threats of nuclear phenomena and the climate crisis. Having taken them into account, you may choose to play the game again and choose a different policy combination to try to get a more desirable outcome, if you were not satisfied with the consequences of your previous choices.
+            </p>
+            <button id="resources-button" class="btn">Resources before you start</button>
+        </div>
+
+        <div id="resources-container" style="display: none;">
+            <h2 style="margin-bottom: 15px;">Resources before we get started</h2>
+            <p>Something to show your friends/family who do not quite understand the impact of nuclear weapons on the environment and humanity yet and do not want to devote too much time to discovering its nature:</p>
+            <div class="resource-links">
+                <a href="https://thebulletin.org/2022/10/nowhere-to-hide-how-a-nuclear-war-would-kill-you-and-almost-everyone-else/" target="_blank" class="resource-btn">Link 1</a>
+                <a href="https://ahf.nuclearmuseum.org/ahf/history/castle-bravo/" target="_blank" class="resource-btn">Link 2</a>
+                <a href="https://thebulletin.org/2014/03/the-link-between-castle-bravo-and-modern-environmentalism/#post-heading" target="_blank" class="resource-btn">Link 3</a>
+            </div>
+
+            <p>Something to read for a deeper understanding of nuclear weapons' potential impact on the environment from the point of view of recent scholarship:</p>
+
+        <div class="resource-links">
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4165831/" target="_blank" class="resource-btn">Link 4</a>
+            <a href="https://academic.oup.com/isagsq/article/3/1/ksad006/7058885" target="_blank" class="resource-btn">Link 5</a>
+            <a href="https://dokumen.pub/the-fate-of-the-earth-and-the-abolition-9781503618305.html" target="_blank" class="resource-btn">Link 6</a>
+        </div>
+            <button id="continue-button" class="btn">Continue</button>
+        </div>
+
+        <div id="poll-container" class="question-container" style="display: none;">
+            <h2 style="margin-bottom:15px;">Quick Polls</h2>
+            
+            <!-- Poll Question 1 -->
+            <div class="poll-question">
+                <p style="margin-bottom:10px;">Do you care about world peace?</p>
+                <div class="poll-options">
+                    <label><input type="radio" name="poll1" value="Yes"> Yes</label>
+                    <label><input type="radio" name="poll1" value="No"> No</label>
+                </div>
+            </div>
+        
+            <!-- Poll Question 2 -->
+            <div class="poll-question">
+                <p style="margin-top:10px;">Do you care about the climate crisis?</p>
+                <div class="poll-options">
+                    <label><input type="radio" name="poll2" value="Yes"> Yes</label>
+                    <label><input type="radio" name="poll2" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="poll-question">
+                <p>Do you think the climate crisis and the environment are interlinked phenomena and should be viewed as such in policy questions?</p>
+                <div class="poll-options">
+                    <label><input type="radio" name="poll3" value="Yes" style="margin-bottom:10px;"> Yes</label>
+                    <label><input type="radio" name="poll3" value="No"> No</label>
+                </div>
+            </div>
+            <button id="case-study-button" class="btn">View case study</button>
+        </div>
+        
+        <div id="case-study-container" class="question-container" style="display: none;">
+            <h2 style="margin-bottom:10px;">Short Case Study to Help Inform Your Decisions</h2>
+            <p>If you are unfamiliar with the topic of the intersection between nuclear phenomena and the climate crisis, you might see the potential link between nuclear energy and the environment, but unsure about what the connection between nuclear weapons and the environment might be, or even doubtful that there is any
+                Let's examine the Castle Bravo nuclear test from 1954: <br>
+
+                <br><strong>Scope:</strong> biggest nuclear detonation executed by the United States, the Castle Bravo test in 1954 during which a thermonuclear bomb of the yield of 15 megatons (meaning 1000x stronger than the bomb detonated over Hiroshima) was detonated on the Bikini Atoll, Marshall Islands
+                <br>
+                <br><strong>Consequences:</strong> The immediate result was radioactive contamination of 7000 square miles of the Pacific as well as complete decimation of oceanic life and global pollution of the atmosphere with soot and radioactive isotopes
+                <br>
+                <br><strong>Implications:</strong> The example of the scale of environmental damage resulting from just one such test demonstrates the fact that, as Rens van Munster says, “modern war (of which nuclear weapons are now a component) is not just a socio-political but also a deeply environmental or ecological problem”
+            </p>
+            <button id="second-polls-button" class="btn" style="margin-top:20px;">Next Polls</button>
+        </div>
+
+        
+        <div id="poll-container-1" class="question-container" style="display: none;">
+            <h2 style="margin-bottom: 15px;">Have You Changed Your Mind?</h2>
+
+            <div class="poll-question">
+                <p style="margin-bottom:10px;">Do you care about world peace?</p>
+                <div class="poll-options">
+                    <label><input type="radio" name="poll1" value="Yes"> Yes</label>
+                    <label><input type="radio" name="poll1" value="No"> No</label>
+                </div>
+            </div>
+        
+            <!-- Poll Question 2 -->
+            <div class="poll-question">
+                <p style="margin-top:10px;">Do you care about the climate crisis?</p>
+                <div class="poll-options">
+                    <label><input type="radio" name="poll2" value="Yes"> Yes</label>
+                    <label><input type="radio" name="poll2" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="poll-question">
+                <p>Do you think the climate crisis and the environment are interlinked phenomena and should be viewed as such in policy questions?</p>
+                <div class="poll-options">
+                    <label><input type="radio" name="poll3" value="Yes" style="margin-bottom:10px;"> Yes</label>
+                    <label><input type="radio" name="poll3" value="No"> No</label>
+                </div>
+            </div>
+            <button id="intro-to-policy-button" class="btn">Begin Policy Selection</button>
+        </div>
+
+        <div id="intro-to-policy-container" class="question-container" style="display: none;">
+            <h2 style="margin-bottom: 15px;">Policy Brief</h2>
+            <p>After learning about a real-life example of the environmental impact of nuclear testing, you can now choose one policy regarding nuclear weapons and one policy regarding nuclear energy, all of which demonstrate different levels of regulation of the interaction of nuclear phenomena and the environment. After your selection of two policies out of the six different policy options, we will reveal the potential results of your decisions in the form of a potential outcome. This outcome will reveal the environmental impacts of your chosen policies. Please bear in mind that your choices are to be made with awareness of the possible environmental impact of them, instead of any other considerations, for example, economic profit. Choose carefully!
+            </p>
+            <button id="start-button-1" class="btn">Begin</button>
+        </div>
+
+
+        <!-- Policy Choice Container 1 -->
+         <div id="policy-container-1" class="question-container" style="display: none;">
+             <h2 style="margin-bottom:10px;">Nuclear Weapons Policy </h2>
+              <div class="policy-option">
+                 <input type="radio" name="policy1" value="A" id="policy1-a">
+                  <label for="policy1-a"><strong>Policy A: The Abolitionist Position -</strong> You choose to introduce a ban on nuclear tests in the territory of your country and lobby for a worldwide ban of nuclear testing to prevent environmental damage. Equally, you engage with the nuclear weapon non-proliferation stance, taking steps towards abolishing nuclear weapons in your territory and pursuing the non-proliferation agenda on the international stage with a view of eventual complete abolishment of nuclear weapons in view of the threat they pose on the escalation of the climate crisis.</label>
+              </div>
+           <div class="policy-option">
+        <input type="radio" name="policy1" value="B" id="policy1-b">
+        <label for="policy1-b"><strong>Policy B: The Hawkish Position -</strong> You do not choose to regulate nuclear weapons production in your territory by virtue of preserving the status quo of deterrence, subscribing to the mutually assured destruction doctrine. In order for the production of nuclear weapons to continue, you do not impose a ban on nuclear tests either, since the weaponry needs to be tested in order to further develop it.
+
+        </label>
+    </div>
+    <div class="policy-option">
+        <input type="radio" name="policy1" value="C" id="policy1-c">
+        <label for="policy1-c"><strong>Policy C: The Middle-Ground Position -</strong> You choose not to obstruct the proliferation of nuclear weapons and continue their development in your territory. However, you do introduce a ban on nuclear testing in view of its damaging effects on the environment.
+        </label>
+    </div>
+    <button id="next-policy-button" class="btn">Next Policy Choice</button>
+</div>
+
+<!-- Policy Choice Container 2 -->
+<div id="policy-container-2" class="question-container" style="display: none;">
+    <h2 style="margin-bottom:10px;">Nuclear Energy Policy</h2>
+    <div class="policy-option">
+        <input type="radio" name="policy2" value="A" id="policy2-a">
+        <label for="policy2-a"><strong>Policy A: The Anti-Nuclear Energy Position -</strong> You choose to implement a ban on nuclear energy production in view of the potentially catastrophic adverse effects of nuclear power plant accidents and their use as targets in strategic warfare. You also pursue a policy of lobbying for a worldwide ban of nuclear energy production to prevent the production of radioactive waste as a byproduct of nuclear energy production on a global scale.</label>
+    </div>
+    <div class="policy-option">
+        <input type="radio" name="policy2" value="B" id="policy2-b">
+        <label for="policy2-b"><strong>Policy B: The Pro-Nuclear Energy Position -</strong> You choose to advocate for the expansion of nuclear energy production in your territory with no stark regulation, seeing it as an environmentally-friendly source of renewable energy and a means of shifting away from fossil fuels.
+        </label>
+    </div>
+    <div class="policy-option">
+        <input type="radio" name="policy2" value="C" id="policy2-c">
+        <label for="policy2-c"><strong>Policy C: The Middle-Ground Position -</strong> You choose to advocate for the production of nuclear energy in your territory in view of shifting away from fossil fuels, but introduce an extensive scheme of regulating its production, implementing stark safety mechanisms to avoid accidents and regulate the disposal of radioactive waste.</label>
+    </div>
+    <button id="submit-choice-button" class="btn">Submit Choice</button>
+</div>
+
+<div id="result-container" class="question-container" style="display: none;">
+    <h2 style="margin-bottom:15px;">Your Policy Implentation Outcome</h2>
+    <p id="result-message"></p>
+    <button id="view-inaction-button" class="btn" style="margin-top:20px;">View Reasons for Inaction</button>
+</div>
+
+
+<div id="inaction-container-1" class="question-container" style="display: none;">
+    <h2 style="margin-bottom:15px;">Understanding Inaction: False Assumption of Impossibilit of Action</h2>
+    <p style="font-size:14px;">In terms of climate change, structural obstacles, such as the need for economic growth, are constantly used to explain and justify inaction. Schemes such as a carbon tax or cap-and-trade programs are seen as the best way to fight climate change, since we conceptualised all solutions within our economic framework, however their efficacy is highly debatable as opposed to other solutions which more radically diverge from neoliberalism. Moreover, certain conceptions of morality can impose limitations on our imaginations of effective solutions to the climate crisis and nuclear phenomena. In particular, the notion of “moral purity,” in which individual contributions to mitigating the climate crisis are viewed as an all-or-nothing commitment, can lead to perceiving any progress towards solutions as practically unattainable and create distressing emotional states which further constrain the scope of action. (Sparkman and Attari, 2020 & Wrosch et al., 2003) 
+
+        Similarly, in nuclear policy, the promise of nuclear disarmament has met structural obstacles. For example, President Obama promised disarmament, yet immediately labelled this hope as a ‘distant goal’ in 2009. Thus, we are made to exist in a “nuclear eternity” where no future without nuclear weapons is conceivable (Pelopidas, 2021). The same problem arises with regards to thinking beyond the neoliberal economic system when it comes to solving the climate crisis. In both cases, a transformation of current social norms is required to allow for effective solutions of the joint threat of the climate crisis and nuclear phenomena. 
+        </p>
+    <button id="inaction-next-button-1" class="btn">Next</button>
+</div>
+
+
+<div id="inaction-container-2" class="question-container" style="display: none;">
+    <h2 style="margin-bottom:15px;">Understanding Inaction: Self-Imposed Limits of Imagination</h2>
+    <p style="font-size:14px;">Günther Anders’ Theses for the Atomic Age (1962) introduces us to the notion of humanity in the atomic age embodying the condition of inverted utopians, since we cannot imagine the reality in which we live and have ourselves created, as opposed to regular utopians who are unable to produce a reality which they succeed in imagining. If we define political imagination as the “ways various agents envision and give sense to their political existence” we start to notice the inhibitions surrounding that vision, namely the tendency to master or conquer the future through the lenses of present convictions. (Hayden in Sylvest and Munster, 2016) This is a tendency which can render unproductive and dangerous consequences. Scholars like Günther Anders or Lewis Mumford emphasise the need to re-open the future in order to surpass the constraints of the presentist normative framework which we now use to picture it, asking us to imagine it rather than to try to conquer it. In other words, instead of thinking within self-imposed boundaries of the impossibility of mitigating the climate crisis or preventing a nuclear disaster, we should dare to imagine a hopeful future and by virtue of overcoming that first cognitive obstacle, start acting on it. To that end, it is useful to consider the phenomenon of imaginative self-censorship which works to constrain the formulation of future scenarios by relying solely on the past and presently knowable, thus significantly impeding the horizons of our imagination when it comes to tackling climate change and nuclear weapons. (Pelopidas, 2016)
+
+        Furthermore, a staunch belief in technology as the inevitable saving grace of humanity creates a closed conception of the future, in which we cannot divorce progress from perpetual technological development. This is especially problematic, when we adopt an instrumentalist view of nuclear weapons, treating them as objects which do not inherently possess value but are instead imbued with it at the hands of policy-makers, resulting in an assumption of lesser responsibility when it comes to their continued development. Equally, when it comes to proposed solutions of climate change, we tend to develop them within the constraints of faith in technology and market-based capitalism, embodied for example by the green growth approach. As noted by Rens van Munster, “techno-managerial thinking sits at the centre of our ecological problem today,” hence imposes further limits on our imagination. (Munster, 2021)
+        </p>
+    <button id="view-tools-btn" class="btn">View Tools</button>
+</div>
+
+
+<div id="tools-container" class="question-container" style="display: none;">
+    <h2 style="margin-bottom:15px">Implementation of a Holistic Worldview</h2>
+    <p style="font-size: 16px;">One of the possible solutions to overcoming inaction on the threats of nuclear weapons and climate change is adopting a holistic worldview. Holism is defined by Sylvest and Munster as a “view of the whole, interconnected world, a concern for future generations and a valuation of the artistic, aesthetic and otherwise non-quantifiable dimensions of human life.” (Sylvest and van Munster, 2016) It is useful here to consider the concept of “intergenerational justice” formulated by Matthew Rendall, since it is only through concern for future generations that we can start conceptualising responsible solutions to the nuclear and climate conundrums. (Rendall, 2007) Additionally, challenging the psychological distance we often experience in imagining the future impacts of the climate crisis, which tends to result in lower concern and motivation to act, can help us overcome inertia. (Trope and Liberman, 2010) Indeed, the recognition of the world as one not only spatially, but also temporally, represents the most important prerequisite for changing it. We can find inspiration for adopting a holistic mindset in the indigenous worldview, such as the Sumak Kawsay, in which nature is ordained with an intrinsic value as opposed to an exploitable resource as is the case in the western worldview.
+    </p>
+    <button id="view-next-tools-btn" class="btn">Next</button>
+</div>
+
+<div id="tools-container-1" class="question-container" style="display: none;">
+    <h2 style="margin-bottom:15px">The Role of Productive Fear and Guilt </h2>
+    <p style="font-size: 16px;">Finally, as opposed to viewing fear as a paralysing agent, Günther Anders invites us to perceive it as “helpful in recovering the ability of humans to imagine and feel.” (Anders, 1962) It is this notion of “loving fear” that should inform our action on nuclear weapons and climate change in view of present and future generations of humanity. (Anders, 1962) One must not also abandon hope which forms the crux of the “ethics of possibility” as formulated by Arjun Appadurai. (Appadurai in Sylvest and van Munster, 2016) Such an ethic includes efforts to increase the horizon of hope, expand the imagination and produce greater equity as part of critical global citizenship. In other words, the ethics of possibility labels hope the political counterpart to the work of the imagination. In the expansion of the boundaries of our imagination of the future, we can also turn to the power of fiction to circumvent the boundaries of imagination. One might think of the depictions of post-apocalyptic worlds following a nuclear war depicted in On the Beach (1959). Such works of fiction help us make tangible the radical evil of nuclear weapons by visualising its consequences. Similarly, visualisations of the environmental consequences of nuclear testing using modern technological tools can make the threat more tangible and increase our emotional response, and hence possibly motivation to act on it. </p>
+    <button id="view-sources-btn" class="btn">View Sources</button>
+</div>
+
+
+<div id="sources-container" class="question-container" style="display: none;">
+    <h2 style="margin-bottom:15px">Sources</h2>
+    <p>
+    <ul style="font-size: 14px;">
+        <li>Anders, Günther. “Theses for the Atomic Age.” The Massachusetts Review, vol. 3, no. 3, 1962, pp. 493–505. JSTOR</li>
+        <li>Kolbert, Elizabeth. The Sixth Extinction: An Unnatural History. First edition, Henry Holt and Company, 2014.</li>
+        <li>Munster, Rens van, and Casper Sylvest. “Reimagining the Future”. Nuclear Realism: Global Political Thought during the Thermonuclear Revolution. Routledge, 2016.</li>
+        <li>Munster , Rens van.  “The Nuclear Origins of the Anthropocene” in David Chandler et. al. (eds.), International Relations in the Anthropocene.: New Agendas, New Agencies, New Approaches, Springer, 2021, pp. 59-75</li>
+        <li>Pelopidas, Benoît. “Nuclear Weapons Scholarship as a Case of Self-Censorship in Security Studies". Journal of Global Security Studies, vol. 1, no. 4, November 2016, pp. 326–36. DOI.org (Crossref)</li>
+        <li>Pelopidas, Benoît, and Sanne Cornelia J. Verschuren. “Writing IR after COVID-19: Reassessing Political Possibilities, Good Faith, and Policy-Relevant Scholarship on Climate Change Mitigation and Nuclear Disarmament". Global Studies Quarterly, vol. 3, no. 1, January 2023, DOI.org (Crossref)</li>
+        <li>Andre, Peter, et al. “Globally Representative Evidence on the Actual and Perceived Support for Climate Action". Nature Climate Change, vol. 14, no. 3, March 2024, pp. 253–59</li>
+        <li>Sparkman, Greg, and Shahzeen Z. Attari. “Credibility, Communication, and Climate Change: How Lifestyle Inconsistency and Do-gooder Derogation Impact Decarbonization Advocacy”. Energy Research & Social Science, vol. 59, Jan. 2020, DOI.org (Crossref)</li>
+        <li>Schell, Jonathan. “Nuclear Weapons and the Real Twentieth Century”. The Fate of the Earth and the Abolition. Stanford: Stanford University Press, 2000, pp. V-xl.</li>
+    </ul>
+    </p>
+    <button id="conclusion-btn" class="btn" style="margin-top:15px;">Conclusion</button>
+</div>
+
+
+<div id="conclusion-container" class="question-container" style="display: none;">
+    <h2 style="margin-bottom:15px">Conclusion</h2>
+    <p style="font-size: 16px;">Thank you for taking part in this project. We hope that you have learnt something new about the intersection between nuclear weapons, energy and the environment and that now you understand better the difficult position that policy-makers find themselves in. Let's hope that real policy-makers are going to do just as well as you did today! If you want to learn more about this topic, feel free to consult our bibliography for additional resources to support your learning.</p>
+    <button id="restart-btn" class="btn">Restart Quiz</button>
+    <button id="form-button" class="btn">Feedback</button>
+</div>
+
+<div id="feedback-container" class="question-container" style="display: none;">
+    <h2 style="margin-bottom: 15px;">We Value your Feedback</h2>
+    <p>Knowing what you know now, have your views on the intersection of nuclear weapons and the environment changed?</p>
+    <div class="poll-options">
+        <label><input type="radio" name="poll4" value="Yes" style="margin-bottom:10px;"> Yes</label>
+        <label><input type="radio" name="poll4" value="No"> No</label>
+    </div>
+
+    <textarea id="feedback-input" rows="4" placeholder="Enter any comments here..."></textarea>
+    <button id="submit-feedback-button" class="btn">Submit Feedback</button>
+    <button id="restart-btn-1" class="btn">Restart Quiz</button>
+</div>
+        
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
