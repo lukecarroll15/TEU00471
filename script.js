@@ -108,8 +108,14 @@ document.getElementById('inaction-next-button-1').addEventListener('click', () =
     document.getElementById('inaction-container-2').style.display = 'block'; // Show next inaction concept
 });
 
-document.getElementById("view-tools-btn").addEventListener("click", () => {
-    document.getElementById("inaction-container-2").style.display= "none";
+document.getElementById('inaction-next-button-2').addEventListener('click', () => {
+    console.log("Next button clicked"); // Debugging log
+    document.getElementById('inaction-container-2').style.display = 'none'; // Hide current inaction concept
+    document.getElementById('inaction-container-3').style.display = 'block'; // Show next inaction concept
+});
+
+document.getElementById("view-inaction-btn").addEventListener("click", () => {
+    document.getElementById("inaction-container-3").style.display= "none";
     document.getElementById("tools-container").style.display="block";
 })
 
