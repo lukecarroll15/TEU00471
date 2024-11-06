@@ -29,12 +29,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #997777;
+    color: #372b2b;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #bb92b7;
+    background: #ae2424;
     background-size: cover;
     margin: 0;
 }
@@ -251,4 +251,3 @@ body {
 #policy-container-2 label {
     font-size:14px;
 }
-
